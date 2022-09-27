@@ -2,27 +2,91 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - tsParticles Hexagon Path</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
-
+  <title>CodePen - Login Screen With Particles.JS</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- https://github.com/matteobruni/tsparticles -->
-<div class="github">
-  <a class="btn btn-link" href="https://github.com/matteobruni/tsparticles" title="Find more info on GitHub">
-    <img class="img-fluid" id="gh-mark" src="https://particles.js.org/images/GitHub-Mark-120px-plus.png" alt="">
-    <span id="gh-project">tsParticles</span>
-  </a>
-  <div>
-    <a class="github-button" href="https://github.com/matteobruni/tsparticles" data-icon="octicon-star" aria-label="Star matteobruni/tsparticles on GitHub">Star</a>
-    <a class="github-button" href="https://github.com/matteobruni/tsparticles/fork" data-icon="octicon-repo-forked" aria-label="Fork matteobruni/tsparticles on GitHub">Fork</a>
-  </div>
-</div>
-<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+  <!--Nav bar-->
+  <header class="clearfix">
+    <div class="container">
+			<div class="header-left">
+				<h4>NeuroCa(u)re eLaboratory  </h4>
+			</div>
+			<div class="header-right">
+				<label for="open">
+					<span class="hidden-desktop"></span>
+				</label>
+				<input type="checkbox" name="" id="open">
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">Signup</a>
+					<a href="#">Login</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+<section class="clearfix">
+		<div class="container">
+			<div class="section-left">
+				<h4 class="section-title">Web-based Drug Discovery ToolBox. </h4>
+			</div>
+		</div>
+	</section>
 <!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/tsparticles@2.1.4/tsparticles.bundle.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/tsparticles-path-polygon@2.1.4/tsparticles.path.polygon.min.js'></script><script  src="./script.js"></script>
+  <script  src="./script.js"></script>
+
+
+<!-- partial:index.partial.html -->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+<div id="particles-js"></div>
+<!-- /.particles div -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-12"><br>
+      <div class="title-container text-center">
+      
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"> <strong class="">SMILE</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="form-group">
+              <label for="email" class="col-md-4 control-label">SMILE INPUT</label>
+              <div class="col-md-6">
+                <input id="email" type="" class="form-control" name="email" value="" required autofocus>
+              </div>
+            </div>
+
+
+           
+            <div class="form-group">
+              <div class="col-md-8 col-md-offset-4">
+                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+  </div><ul id="colors" class="list-inline text-center"></ul>
+
+</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
