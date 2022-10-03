@@ -1,0 +1,80 @@
+{%extends 'base.html'%}
+{%load static%}
+<head>
+  <meta charset="UTF-8">
+  <title>MedChem</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+ {% block body %}
+ <!-- partial:index.partial.html -->
+<script  src="{% static 'js/script.js'%}"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{% static 'js/script.js'%}"></script>
+<div id="particles-js"></div>
+<!-- /.particles div -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-12"><br>
+      <div class="title-container text-center">
+      
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"> <strong class="">Signup</strong>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="form-group">
+              <label for="email" class="col-md-4 control-label">Firstname</label>
+              <div class="col-md-6">
+                <input id="email" type="" class="form-control" name="firstname" value="" required autofocus>
+              </div>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="form-group">
+              <label for="email" class="col-md-4 control-label">Email</label>
+              <div class="col-md-6">
+                <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+              </div>
+            </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form" method="POST" action="">
+            <div class="form-group">
+              <label for="email" class="col-md-4 control-label">Email</label>
+              <div class="col-md-6">
+                <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-md-4 control-label">Password</label>
+              <div class="col-md-6">
+                <input id="password" type="password" class="form-control" name="password" value="" required autofocus>
+              </div>
+            </div>
+
+           
+            <div class="form-group">
+              <div class="col-md-8 col-md-offset-4">
+                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+
+              </div>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+
+  </div><ul id="colors" class="list-inline text-center"></ul>
+
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js'></script><script  src="{% static 'js/script.js'%}"></script>
+ 
+ {% endblock body %}
+

@@ -1,10 +1,9 @@
-
 .right_conatct_social_icon{
      background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
 }
 .contact_us{
     background-color: #f1f1f1;
-    padding: 120px 0px;
+    padding-top: 60px;
 }
 
 .contact_inner{
@@ -99,18 +98,3 @@ button.contact_form_submit {
     padding-bottom: 10px;
 }
 
-.map_sec{
-    padding: 50px 0px;
-}
-.map_inner h4, .map_inner p{
-    color: #000;
-    text-align: center
-}
-.map_inner p{
-    font-size: 13px;
-}
-.map_bind{
-   margin-top: 50px;
-    border-radius: 30px;
-    overflow: hidden;
-}

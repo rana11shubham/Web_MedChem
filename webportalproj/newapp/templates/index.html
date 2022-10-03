@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{%extends 'base.html'%}
 {%load static%}
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
  {% block body %}
- <script  src="{% static 'js/script.js'%}"></script>
+ <!-- partial:index.partial.html -->
+<script  src="{% static 'js/script.js'%}"></script>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{% static 'js/script.js'%}"></script>
 <div id="particles-js"></div>
@@ -51,14 +52,11 @@
 
 </div>
 <!-- partial -->
- {% endblock body %}
- <!-- partial:index.partial.html -->
- 
-
-
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js'></script><script  src="{% static 'js/script.js'%}"></script>
  
+ {% endblock body %}
+
 {% comment %} <!DOCTYPE html>
 <html lang="en" >
 <head>
