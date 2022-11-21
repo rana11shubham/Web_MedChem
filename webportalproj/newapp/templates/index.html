@@ -20,15 +20,24 @@
       <div class="title-container text-center">
       
       </div>
+      {% if messages %}
+        {% for message in messages %}
+       <div class="alert alert-warning alert-dismissible fade show" align="center"  role="alert">
+          <p class="{{ message.tags }}">{{ message }}</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
       <div class="panel panel-default">
         <div class="panel-heading"> <strong class="">SMILE</strong>
         </div>
         <div class="panel-body">
-          <form class="form-horizontal" role="form" method="POST" action="">
+          <form class="form-horizontal" role="form" method="POST" action="/">
+            {% csrf_token %}
             <div class="form-group">
-              <label for="email" class="col-md-4 control-label">SMILE INPUT</label>
+              <label for="smile" class="col-md-4 control-label">SMILE INPUT</label>
               <div class="col-md-6">
-                <input id="email" type="" class="form-control" name="email" value="" required autofocus>
+                <input id="smile" type="" class="form-control" name="smile" value="" required autofocus>
               </div>
             </div>
 
