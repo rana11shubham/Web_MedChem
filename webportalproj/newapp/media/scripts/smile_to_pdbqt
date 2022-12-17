@@ -1,0 +1,2 @@
+#!/bin/bash
+obabel newapp/media/scripts/ymdb.smi -O newapp/media/scripts/ymdb1.pdbqt

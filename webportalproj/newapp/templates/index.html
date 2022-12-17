@@ -9,35 +9,47 @@
 </head>
  {% block body %}
  <!-- partial:index.partial.html -->
-<script  src="{% static 'js/script.js'%}"></script>
+{% comment %} <script  src="{% static 'js/script.js'%}"></script>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{% static 'js/script.js'%}"></script>
-<div id="particles-js"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{% static 'js/script.js'%}"></script> {% endcomment %}
+<div id="particles-js">
+</div> 
 <!-- /.particles div -->
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3 col-xs-12"><br>
       <div class="title-container text-center">
-      
+        
       </div>
+      {% comment %} Adding alert for showing the success message {% endcomment %}
       {% if messages %}
         {% for message in messages %}
-       <div class="alert alert-warning alert-dismissible fade show" align="center"  role="alert">
-          <p class="{{ message.tags }}">{{ message }}</p>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+     <div class="alert alert-success">
+  
+      <a href="/" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <p class="{{ message.tags }}">{{ message }}</p>
+    </div>
         {% endfor %}
         {% endif %}
       <div class="panel panel-default">
         <div class="panel-heading"> <strong class="">SMILE</strong>
         </div>
         <div class="panel-body">
+         {% comment %} Adding Messages tag {% endcomment %}
+        
           <form class="form-horizontal" role="form" method="POST" action="/">
             {% csrf_token %}
             <div class="form-group">
               <label for="smile" class="col-md-4 control-label">SMILE INPUT</label>
               <div class="col-md-6">
                 <input id="smile" type="" class="form-control" name="smile" value="" required autofocus>
+              </div>
+              </div>
+              <div class="form-group">
+               <label for="smile" class="col-md-4 control-label">PDB INPUT</label>
+              <div class="col-md-6">
+                <input id="pdb" type="" class="form-control" name="pdb" value="" required autofocus>
               </div>
             </div>
 
@@ -60,6 +72,7 @@
   </div><ul id="colors" class="list-inline text-center"></ul>
 
 </div>
+
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://vincentgarreau.com/particles.js/assets/_build/js/lib/particles.js'></script><script  src="{% static 'js/script.js'%}"></script>
